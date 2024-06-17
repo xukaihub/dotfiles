@@ -83,10 +83,6 @@ Plug 'hotoo/pangu.vim'
 " repo: https://github.com/Exafunction/codeium.vim
 Plug 'Exafunction/codeium.vim'
 
-" Markdown preview plugin.
-" repo: https://github.com/iamcco/markdown-preview.nvim
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-
 " Highlights trailing whitespace in red and provides :FixWhitespace to fix it.
 " repo: https://github.com/iamcco/vim-trailing-whitespace
 Plug 'bronson/vim-trailing-whitespace'
