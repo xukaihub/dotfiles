@@ -1,0 +1,17 @@
+[user]
+	email = xukai@nationalchip.com
+	name = xukai
+[color]
+	ui = auto
+[core]
+	excludesfile = ~/.gitignore_global
+	quotepath = false
+	fileMode = false
+[oh-my-zsh]
+	hide-dirty = 1
+[init]
+	defaultBranch = main
+[help]
+	credential = osxkeychain
+; [http]
+; 	proxy = http://127.0.0.1:7890
