@@ -33,6 +33,8 @@ TERM = "xterm-256color"
 [window]
 padding.x = 10
 padding.y = 10
+dimensions.columns = 128
+dimensions.lines = 42
 decorations = "Buttonless"
 opacity = 0.9
 blur = true
