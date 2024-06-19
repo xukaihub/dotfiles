@@ -28,7 +28,6 @@ zinit snippet OMZL::clipboard.zsh
 zinit snippet OMZL::history.zsh
 zinit snippet OMZL::functions.zsh
 
-zinit snippet OMZP::z
 zinit snippet OMZP::sudo
 zinit snippet OMZP::extract
 zinit snippet OMZP::command-not-found
@@ -83,3 +82,4 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+eval "$(zoxide init zsh)"
