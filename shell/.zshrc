@@ -52,7 +52,12 @@ zinit snippet OMZL::history.zsh
 zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
 zinit light sindresorhus/pure
 
-autoload -Uz compinit && compinit
+autoload -Uz compinit
+for dump in ~/.zcompdump(N.mh+24); do
+  compinit
+done
+compinit -C
+
 zinit cdreplay -q
 
 # Install .tmux
