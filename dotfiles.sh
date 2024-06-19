@@ -4,7 +4,7 @@
 TARGET_DIR="$HOME"
 
 # Define an array of dotfiles directories to be managed
-DOTFILES=("shell" "tmux" "nvim" "vim" "git")
+DOTFILES=("shell" "tmux" "nvim" "vim" "git" "alacritty")
 
 # Function to print usage information
 usage() {
