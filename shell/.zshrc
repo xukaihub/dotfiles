@@ -66,6 +66,7 @@ zinit cdreplay -q
 if [[ ! -d ~/.tmux ]]; then
     git clone https://github.com/gpakosz/.tmux.git ~/.tmux
     ln -s -f .tmux/.tmux.conf ~/.tmux.conf
+    tmux source-file ~/.tmux.conf
 fi
 
 # Hide username and hostname
