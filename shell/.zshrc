@@ -21,15 +21,18 @@ zinit ice wait lucid depth"1"
 zinit light zsh-users/zsh-history-substring-search
 
 # Snippets
-zinit snippet OMZP::z
-zinit snippet OMZP::sudo
-zinit snippet OMZP::extract
-zinit snippet OMZP::command-not-found
 zinit snippet OMZL::completion.zsh
 zinit snippet OMZL::theme-and-appearance.zsh
 zinit snippet OMZL::directories.zsh
 zinit snippet OMZL::clipboard.zsh
 zinit snippet OMZL::history.zsh
+zinit snippet OMZL::functions.zsh
+
+zinit snippet OMZP::z
+zinit snippet OMZP::sudo
+zinit snippet OMZP::extract
+zinit snippet OMZP::command-not-found
+zinit snippet OMZP::web-search
 
 # zinit snippet OMZL::async_prompt.zsh
 # zinit snippet OMZL::bzr.zsh
@@ -37,7 +40,6 @@ zinit snippet OMZL::history.zsh
 # zinit snippet OMZL::compfix.zsh
 # zinit snippet OMZL::correction.zsh
 # zinit snippet OMZL::diagnostics.zsh
-# zinit snippet OMZL::functions.zsh
 # zinit snippet OMZL::git.zsh
 # zinit snippet OMZL::grep.zsh
 # zinit snippet OMZL::key-bindings.zsh
