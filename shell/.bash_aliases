@@ -53,6 +53,7 @@ alias repou='repo upload .'
 
 # tmux alias
 alias ta='tmux attach'
+alias td='tmux detach'
 alias tl='tmux list-sessions'
 alias tk='tmux kill-session -t $1'
 
