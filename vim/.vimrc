@@ -51,6 +51,10 @@ Plug 'easymotion/vim-easymotion'
 " repo: https://github.com/Raimondi/delimitMate
 Plug 'Raimondi/delimitMate'
 
+" General-purpose command-line fuzzy finder.
+" repo: https://github.com/junegunn/fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
 " General-purpose command-line fuzzy finder for vim.
 " repo: https://github.com/junegunn/fzf.vim
 Plug 'junegunn/fzf.vim'
