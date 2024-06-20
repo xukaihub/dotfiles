@@ -20,6 +20,9 @@ zinit light zsh-users/zsh-completions
 zinit ice wait lucid depth"1"
 zinit light zsh-users/zsh-history-substring-search
 
+zinit ice wait lucid depth"1"
+zinit light jeffreytse/zsh-vi-mode
+
 # Snippets
 zinit snippet OMZL::completion.zsh
 zinit snippet OMZL::theme-and-appearance.zsh
