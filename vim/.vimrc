@@ -95,6 +95,10 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 " repo: https://github.com/liuchengxu/vim-which-key
 Plug 'liuchengxu/vim-which-key'
 
+" Vim plugin for navigating vim and tmux splits seamlessly
+" repo: https://github.com/christoomey/vim-tmux-navigator
+Plug 'christoomey/vim-tmux-navigator'
+
 " Initialize plugin system
 call plug#end()
 
