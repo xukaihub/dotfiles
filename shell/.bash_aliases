@@ -66,44 +66,43 @@ alias vi="nvim"
 alias vimdiff='nvim -d'
 export EDITOR=nvim
 
-pc()      { picocom -e e -b 115200 /dev/ttyUSB$1; }
-mc()      { minicom -D /dev/ttyUSB$1 -b 115200 --color=on; }
-venv3()   { python3 -m venv $@; }
-dotcd()   { cd ~/.local/dotfiles }
-dotedit() { (cd ~/.local/dotfiles && vim) }
-dotup()   { (cd ~/.local/dotfiles && git pull) }
+pc() { picocom -e e -b 115200 /dev/ttyUSB$1; }
+mc() { minicom -D /dev/ttyUSB$1 -b 115200 --color=on; }
+venv3() { python3 -m venv $@; }
+dotedit() { (cd ~/.local/dotfiles && vim); }
+dotup() { (cd ~/.local/dotfiles && git pull); }
+alias dotcd='cd ~/.local/dotfiles'
 
 # colored man pages
 man() {
-    env \
-    LESS_TERMCAP_mb=$(printf "\e[1;31m") \
-    LESS_TERMCAP_md=$(printf "\e[1;31m") \
-    LESS_TERMCAP_me=$(printf "\e[0m") \
-    LESS_TERMCAP_se=$(printf "\e[0m") \
-    LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
-    LESS_TERMCAP_ue=$(printf "\e[0m") \
-    LESS_TERMCAP_us=$(printf "\e[1;32m") \
-    man "$@"
+	env \
+		LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+		LESS_TERMCAP_md=$(printf "\e[1;31m") \
+		LESS_TERMCAP_me=$(printf "\e[0m") \
+		LESS_TERMCAP_se=$(printf "\e[0m") \
+		LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+		LESS_TERMCAP_ue=$(printf "\e[0m") \
+		LESS_TERMCAP_us=$(printf "\e[1;32m") \
+		man "$@"
 }
 
 #
 # PATH
 #
 function ADD_PATH() {
-    if [[ -d $1 ]] && [[ ! $PATH =~ $1 ]]; then
-        export PATH="$PATH:$1"
-    fi
+	if [[ -d $1 ]] && [[ ! $PATH =~ $1 ]]; then
+		export PATH="$PATH:$1"
+	fi
 }
 
 function ADD_PATH_BEFORE() {
-    if [[ -d $1 ]] && [[ ! $PATH =~ $1 ]]; then
-        export PATH="$1:$PATH"
-    fi
+	if [[ -d $1 ]] && [[ ! $PATH =~ $1 ]]; then
+		export PATH="$1:$PATH"
+	fi
 }
 
 ADD_PATH_BEFORE $HOME/.local/bin
 
 if [ -f ~/.bash_local_aliases ]; then
-    . ~/.bash_local_aliases
+	. ~/.bash_local_aliases
 fi
-
