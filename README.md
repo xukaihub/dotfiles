@@ -12,18 +12,20 @@ Before installing the dotfiles, ensure you have the following software installed
 - `vim`
 - `neovim`
 - `git`
+- `gcc`
+- `ripgrep`
 
 In MacOS, you can install these dependencies using `brew`:
 
 ```sh
-brew install zsh stow tmux vim neovim git
+brew install zsh stow tmux vim neovim git ripgrep
 ```
 
 In Ubuntu, you can install these dependencies using `apt`:
 
 ```sh
 sudo apt update
-sudo apt install zsh stow tmux vim neovim git
+sudo apt install zsh stow tmux vim neovim git build-essential
 ```
 
 ## Installation
