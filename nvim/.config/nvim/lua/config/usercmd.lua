@@ -46,3 +46,6 @@ vim.api.nvim_set_keymap(
   ":ReplaceSpacesWithTabs<CR>",
   { noremap = true, silent = true, desc = "Replace spaces with tabs" }
 )
+
+-- Add some config written by vimscript
+vim.cmd('source ~/.config/nvim/vimrc/vimrc')
