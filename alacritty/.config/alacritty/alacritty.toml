@@ -51,3 +51,6 @@ save_to_clipboard=true
 bindings = [
     { key = "Space", mods = "Control|Command", action = "ToggleViMode" },
 ]
+
+[scrolling]
+history = 100000
