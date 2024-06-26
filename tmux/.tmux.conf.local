@@ -69,6 +69,9 @@ tmux_conf_new_pane_reconnect_ssh=false
 # see https://github.com/termstandard/colors
 tmux_conf_24b_colour=auto
 
+# True color settings
+set -g default-terminal "$TERM"
+set -ag terminal-overrides ",$TERM:Tc"
 
 # -- theming -------------------------------------------------------------------
 
