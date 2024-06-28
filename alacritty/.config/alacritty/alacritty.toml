@@ -36,7 +36,7 @@ padding.y = 10
 dimensions.columns = 128
 dimensions.lines = 42
 decorations = "Buttonless"
-opacity = 0.9
+# opacity = 0.9
 blur = true
 option_as_alt = "Both"
 
