@@ -23,3 +23,5 @@ function! VisualSelection(direction, extra_filter) range
     let @" = l:saved_reg
 endfunction
 
+" Map Ctrl-m to Ctrl-z
+nmap <C-m> <C-z>
