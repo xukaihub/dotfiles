@@ -52,7 +52,7 @@ Enter `\vim` and run:
 
 Your `dotfiles` are now installed and configured!
 
-## NerdFont Install
+### Install NerdFont
 
 ```sh
 ./nerdfont.sh UbuntuMono DejaVuSansMono

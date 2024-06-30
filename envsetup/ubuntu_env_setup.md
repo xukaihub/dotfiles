@@ -61,7 +61,7 @@ source ~/.bashrc
 Install necessary packages via Homebrew:
 
 ```bash
-brew install zsh stow tmux vim neovim git ripgrep eza zoxide bat
+brew install zsh stow tmux vim neovim git ripgrep eza zoxide bat lazygit
 ```
 
 ## Install Dotfiles
