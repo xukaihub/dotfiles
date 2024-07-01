@@ -33,9 +33,9 @@ alias mk='make clean;make'
 
 # git alias
 alias gits='git status'
-alias gitl='git log'
-alias gitd='git diff'
-alias gitdc='git diff --cached'
+alias gitl='git log | bat'
+alias gitd='git diff | bat'
+alias gitdc='git diff --cached | bat'
 alias gitb='git branch'
 alias gitc='git checkout -- .'
 alias gitr='git reset --hard HEAD^'
