@@ -8,7 +8,7 @@ First, update your package list and install some essential utilities:
 
 ```bash
 sudo apt update
-sudo apt install git build-essential curl gdebi
+sudo apt install git zsh build-essential curl gdebi
 ```
 
 ## Install Google Chrome
@@ -39,9 +39,6 @@ ssh-add
 
 Add the contents of `~/.ssh/id_rsa.pub` to your GitHub account.
 
-## Install Clash for Windows
-
-Follow the instructions on the [Clash for Windows GitHub page](https://github.com/Fndroid/clash_for_windows_pkg) to install Clash for Windows.
 
 ## Install Homebrew
 
@@ -61,7 +58,7 @@ source ~/.bashrc
 Install necessary packages via Homebrew:
 
 ```bash
-brew install zsh stow tmux vim neovim git ripgrep eza zoxide bat lazygit
+brew install stow tmux vim neovim git ripgrep eza zoxide bat lazygit
 ```
 
 ## Install Dotfiles
@@ -69,7 +66,7 @@ brew install zsh stow tmux vim neovim git ripgrep eza zoxide bat lazygit
 Clone your dotfiles repository and set up the environment:
 
 ```bash
-git clone git@github.com:xukaihub/dotfiles.git ~/.local/dotfiles
+git clone https://github.com/xukaihub/dotfiles.git ~/.local/dotfiles
 cd ~/.local/dotfiles
 ./nerdfont.sh UbuntuMono DejaVuSansMono 
 ./dotfiles.sh stow
@@ -79,28 +76,13 @@ cd ~/.local/dotfiles
 
 Follow your terminal emulator's instructions to set the installed Nerd Fonts as the terminal font.
 
-## Install Neovim Plugins
-
-Open Neovim and install plugins:
-
-```bash
-nvim
-```
-
-## Install Vim Plugins
-
-Open Vim and install plugins:
-
-```bash
-vim
-:PlugInstall
-```
 
 ## Setup Zsh
 
 Change your shell to Zsh and configure it:
 
 ```bash
+chsh -s $(which zsh)
 zsh
 ```
 
@@ -111,3 +93,25 @@ Start Tmux and configure it:
 ```bash
 tmux
 ```
+Tmux plugin  will be installed automatically when you start Tmux.
+
+
+## Install Neovim Plugins
+
+Open Neovim and install plugins:
+
+```bash
+nvim
+```
+Plugin will be installed automatically when you start Neovim.
+
+
+## Install Vim Plugins
+
+Open Vim and install plugins:
+
+```bash
+\vim
+:PlugInstall
+```
+
