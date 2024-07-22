@@ -33,9 +33,9 @@ alias mk='make clean;make'
 
 # git alias
 alias gits='git status'
-alias gitl='git log | bat'
-alias gitd='git diff | bat'
-alias gitdc='git diff --cached | bat'
+alias gitl='git log | bat -n'
+alias gitd='git diff | bat -n'
+alias gitdc='git diff --cached | bat -n'
 alias gitb='git branch'
 alias gitc='git checkout -- .'
 alias gitr='git reset --hard HEAD^'
@@ -56,9 +56,6 @@ alias ta='tmux attach'
 alias td='tmux detach'
 alias tl='tmux list-sessions'
 alias tk='tmux kill-session -t $1'
-
-# Homebrew alias
-alias brew='ALL_PROXY=http://127.0.0.1:7890 brew'
 
 # Editor alias
 alias vim="nvim"
