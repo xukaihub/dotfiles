@@ -33,7 +33,7 @@ alias mk='make clean;make'
 
 # git alias
 alias gits='git status'
-alias gitl='git log | bat -n'
+alias gitl='git log'
 alias gitd='git diff | bat -n'
 alias gitdc='git diff --cached | bat -n'
 alias gitb='git branch'
