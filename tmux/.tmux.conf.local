@@ -73,6 +73,9 @@ tmux_conf_24b_colour=auto
 set -g default-terminal "$TERM"
 set -ag terminal-overrides ",$TERM:Tc"
 
+
+set -g allow-passthrough on
+
 # -- theming -------------------------------------------------------------------
 
 # enable or disable theming:
