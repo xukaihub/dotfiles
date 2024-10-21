@@ -1,5 +1,5 @@
 return {
-    "ibhagwan/smartyank.nvim",
+    "xukaihub/smartyank.nvim",
     config = function()
         require('smartyank').setup {
             highlight = {
@@ -13,7 +13,7 @@ return {
             tmux = {
                 enabled = true,
                 -- remove `-w` to disable copy to host client's clipboard
-                -- cmd = { 'tmux', 'set-buffer', '-w' }
+                cmd = { 'tmux', 'set-buffer', '-w' }
             },
             osc52 = {
                 enabled = true,
