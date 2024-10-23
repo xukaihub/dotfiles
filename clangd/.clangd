@@ -1,2 +1,2 @@
 CompileFlags:
-  Remove: [-mcpu=*, -fstrict-volatile-bitfields]
+  Remove: [-mcpu=*, -march=*, -fstrict-volatile-bitfields]
