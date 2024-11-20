@@ -11,3 +11,4 @@ vim.opt.tabstop = 4                           -- Number of spaces tabs count for
 vim.opt.smartindent = true                    -- Enable smart indent
 vim.opt.expandtab = true                      -- Use spaces instead of tabs
 vim.opt.listchars = { tab = "▸ " }            -- Set tab characters
+vim.diagnostic.enable(false)                  -- Disable diagnostics
