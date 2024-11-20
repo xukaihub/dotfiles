@@ -12,3 +12,7 @@ vim.opt.smartindent = true                    -- Enable smart indent
 vim.opt.expandtab = true                      -- Use spaces instead of tabs
 vim.opt.listchars = { tab = "▸ " }            -- Set tab characters
 vim.diagnostic.enable(false)                  -- Disable diagnostics
+
+--- Markdown preview plugin options
+vim.g.mkdp_open_to_the_world = 1              -- Make Markdown preview server available to others in your network
+vim.g.mkdp_echo_preview_url = 1               -- Echo preview page URL in command line when opening preview page
