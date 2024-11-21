@@ -1,0 +1,9 @@
+alt - c : open -a 'Visual Studio Code'
+alt - a : open -a 'Alacritty'
+alt - o : open -a 'Obsidian'
+alt - g : open -a 'Google Chrome'
+alt - w : open -a 'WeChat'
+alt - m : open -a 'Foxmail'
+alt - f : open -a 'Finder'
+alt - p : open -a 'WPSOffice'
+
