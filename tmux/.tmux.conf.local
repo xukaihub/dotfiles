@@ -454,7 +454,7 @@ set -g @plugin 'tmux-plugins/tmux-battery'
 
 set -g @plugin 'catppuccin/tmux'
 set -g @catppuccin_flavor 'mocha' # latte, frappe, macchiato or mocha
-set -g @catppuccin_window_status_style "slanted" # basic, rounded, slanted or none
+set -g @catppuccin_window_status_style "rounded" # basic, rounded, slanted or none
 
 # Make the status line pretty and add some modules
 set -g status-right-length 100
