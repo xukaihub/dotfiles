@@ -70,6 +70,9 @@ dotedit() { (cd ~/.local/dotfiles && vim); }
 dotup() { (cd ~/.local/dotfiles && git pull); }
 alias dotcd='cd ~/.local/dotfiles'
 
+# Fzf 
+export FZF_DEFAULT_OPTS="--height 40% --border --layout=reverse --ansi"
+
 # colored man pages
 man() {
 	env \
