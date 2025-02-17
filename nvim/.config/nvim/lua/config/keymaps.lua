@@ -16,4 +16,4 @@ vim.api.nvim_set_keymap('n', '<Tab>', ':bnext<CR>', { noremap = true, silent = t
 vim.api.nvim_set_keymap('n', '<S-Tab>', ':bprevious<CR>', { noremap = true, silent = true, desc = 'Previous buffer' })
 
 -- Ctrl-p to open fuzzy finder
-vim.api.nvim_set_keymap('n', '<C-p>', ':FzfLua files<CR>', { noremap = true, silent = true, desc = 'Open fuzzy finder' })
+-- vim.api.nvim_set_keymap('n', '<C-p>', ':FzfLua files<CR>', { noremap = true, silent = true, desc = 'Open fuzzy finder' })
