@@ -22,11 +22,10 @@ alias g='grep -nr'
 # python http server
 alias pservice='python3 -m http.server'
 
-# tags and cscope
-alias csrbq='sudo find -type f -name "*.[chS]" > cscope.files && cscope -bR -i cscope.files'
+# tags
 alias ctagsdb='ctags -R *'
-alias db_init='csrbq && ctagsdb'
-alias db_clean='rm -f cscope.* tags'
+alias db_init='ctagsdb'
+alias db_clean='rm -f tags'
 
 alias sadb='adb kill-server; sudo adb start-server;adb devices'
 alias mk='make clean;make'
