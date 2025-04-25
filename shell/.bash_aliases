@@ -64,12 +64,39 @@ export EDITOR=nvim
 
 pc() { picocom -e e -b 115200 /dev/ttyUSB$1; }
 mc() { minicom -D /dev/ttyUSB$1 -b 115200 --color=on; }
+tc() {
+    local DEV=${1:-0}
+    local BAUD=${2:-115200}
+
+    # If DEV is a number, automatically expand it to /dev/ttyUSB<num>
+    if [[ "$DEV" =~ ^[0-9]+$ ]]; then
+        DEV="/dev/ttyUSB$DEV"
+    fi
+
+    while true; do
+        clear
+        echo "🔌 Starting tio on $DEV at $BAUD..."
+        tio -b "$BAUD" "$DEV"
+        local EXIT_CODE=$?
+        echo
+        if [ "$EXIT_CODE" -eq 0 ]; then
+            echo "✅ Exited normally. Stopping auto-reconnect."
+            break
+        fi
+
+        echo "🔁 Press Enter to reconnect, or Ctrl+C to quit..."
+        # Reset terminal and wait for user input
+        stty sane
+        bash -c 'read -n1'
+    done
+}
+
 venv3() { python3 -m venv $@; }
 dotedit() { (cd ~/.local/dotfiles && vim); }
 dotup() { (cd ~/.local/dotfiles && git pull); }
 alias dotcd='cd ~/.local/dotfiles'
 
-# Fzf 
+# Fzf
 export FZF_DEFAULT_OPTS="--height 40% --border --layout=reverse --ansi"
 
 # colored man pages
