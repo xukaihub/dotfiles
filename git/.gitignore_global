@@ -74,7 +74,6 @@ cscope.po.out
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-*.code-workspace
 
 # Diff & Patch
 *.patch
