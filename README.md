@@ -5,16 +5,9 @@ This is my personal `dotfiles` repository.
 ## Dependencies
 
 Before installing the dotfiles, ensure you have the following software installed:
-
-- `zsh`
-- `stow`
-- `tmux`
-- `vim`
-- `neovim`
-- `git`
-- `gcc`
-- `ripgrep`
-- `bat`
+```
+stow tmux vim neovim git eza zoxide bat lazygit bfs vivid ag dust duf
+```
 
 In MacOS, you can install these dependencies using `brew`:
 
