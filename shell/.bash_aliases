@@ -16,8 +16,8 @@ alias fix="dpkg -l | grep ^rc | awk '{print $2}' | sudo xargs dpkg -P 2>  /dev/n
 alias free='free -h'
 alias df='df -h'
 
-alias f='find . -name'
-alias g='grep -nr'
+alias f='bfs . -name'
+alias g='ag'
 
 # python http server
 alias pservice='python3 -m http.server'
