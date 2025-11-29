@@ -19,7 +19,7 @@ Before installing the dotfiles, ensure you have the following software installed
 In MacOS, you can install these dependencies using `brew`:
 
 ```sh
-brew install stow tmux vim neovim git eza zoxide bat lazygit bfs vivid ag dust
+brew install stow tmux vim neovim git eza zoxide bat lazygit bfs vivid ag dust duf
 ```
 
 In Ubuntu, please refer to [ubuntu env setup](envsetup/ubuntu_env_setup.md).

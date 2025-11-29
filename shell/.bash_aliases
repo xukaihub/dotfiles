@@ -14,11 +14,11 @@ alias c='reset;clear'
 alias fix="dpkg -l | grep ^rc | awk '{print $2}' | sudo xargs dpkg -P 2>  /dev/null"
 
 alias free='free -h'
-alias df='df -h'
+alias df='duf'
 
 alias f='bfs . -name'
 alias g='ag'
-alias d='dust -r'
+alias du='dust -r'
 
 # python http server
 alias pservice='python3 -m http.server'

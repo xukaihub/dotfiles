@@ -58,7 +58,7 @@ source ~/.bashrc
 Install necessary packages via Homebrew:
 
 ```bash
-brew install stow tmux vim neovim git eza zoxide bat lazygit bfs vivid ag dust
+brew install stow tmux vim neovim git eza zoxide bat lazygit bfs vivid ag dust duf
 ```
 
 ## Install Dotfiles
