@@ -73,6 +73,13 @@ fi
 # Hide username and hostname
 export DEFAULT_USER=$USER
 
+# Vivid is a generator for the LS_COLORS environment variable that
+# controls the colorized output of ls, tree, fd, bfs, dust and many other tools.
+# brew install vivid
+if command -v vivid >/dev/null 2>&1; then
+  export LS_COLORS="$(vivid generate one-dark)"
+fi
+
 # Solve "zsh:no matches found" issue
 setopt no_nomatch
 
