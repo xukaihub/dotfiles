@@ -18,6 +18,7 @@ alias df='df -h'
 
 alias f='bfs . -name'
 alias g='ag'
+alias d='dust -r'
 
 # python http server
 alias pservice='python3 -m http.server'
